@@ -1,8 +1,6 @@
 import inspect
-from time import time
 import logging
 import coloredlogs
-from settings import DEBUG
 
 logger = logging.getLogger(".")
 coloredlogs.install(level='DEBUG')
@@ -26,7 +24,7 @@ def error_exit(error_message, exit_code = 1):
 	error(error_message)
 	exit(exit_code)
 
-def run():
+def run(DEBUG = False):
 	for _class in TestCase.__subclasses__():
 		c = _class()
 		if _class.enabled:

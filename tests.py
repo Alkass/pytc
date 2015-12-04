@@ -1,4 +1,4 @@
-from pytc import TestCase, run as run_tests
+from pytc.pytc import TestCase, run as run_tests
 
 class A(TestCase):
 	description = "This is a test case example"
