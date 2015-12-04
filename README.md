@@ -1,13 +1,13 @@
-#TestCase
-<i>TestCase</i> is a tiny single-file Python script testing tool meant to keep your test cases organized and informative.
+#pytc
+<i>pytc</i> (stands for Python Test Case) a tiny Python code testing tool designed to keep your Python test cases organized and informative.
 
-#Is TestCase the Right Tool for my Project?
-Large projects require well-defined sets of test cases, and as your project requirements change, you'll often find yourself re-implementing (or making major/minor modifications to) existing code. Some existing features break when they are modified or when new features are added. <i>TestCase</i> allows you to re-run all your test cases with a single command line.
+#Is pytc the Right Tool for my Project?
+Large projects require well-defined sets of test cases, and as your project requirements change, you'll often find yourself re-implementing (or making major/minor modifications to) existing code. Some existing features break when they are modified or when new features are added. <i>pytc</i> allows you to re-run all your test cases with a single command line.
 
 #Documentation
-The whole idea behind <i>TestCase</i> is simple; extend the `TestCase` abstract class, implement the `setup()` method (optional), write as many test methods as you need, and <i>TestCase</i> will take care of the rest. The "rest" includes running all your classes in the order they are listed in the source code file.
+The whole idea behind <i>pytc</i> is simple; extend the `TestCase` abstract class, implement the `setup()` method (optional), write as many test methods as you need, and <i>pytc</i> will take care of the rest. The "rest" includes running all your classes in the order they are listed in the source code file.
 
->Note: All methods starting with the word 'test' in their names are considered individual test cases and will be automatically invoked by <i>TestCase</i>.
+>Note: All methods starting with the word 'test' in their names are considered individual test cases and will be automatically invoked by <i>pytc</i>.
 
 Perhaps the bare minimum test case class looks like the following:
 
