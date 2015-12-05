@@ -6,6 +6,7 @@ class A(TestCase):
 	def setup(self):
 		self.x = 30
 		self.y = 30
+	setup.description = "invoking the setup method"
 
 	def test_if_equal(self):
 		self.info("Yes" if self.x == self.y else "No")
@@ -24,4 +25,4 @@ class A(TestCase):
 	children in the order they are implemented in this source
 	file.
 """
-run_tests()
+run_tests(DEBUG=True)

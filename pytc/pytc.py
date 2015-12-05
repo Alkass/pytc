@@ -37,7 +37,7 @@ def run(DEBUG = False):
 				if "description" in _class_setup_fields:
 					logger.info("%s.setup: %s" % (_class.__name__, _class.setup.description))
 				elif DEBUG:
-					logger.warn("class %s's setup field has no description message")
+					logger.warn("class %s's setup field has no description message" % _class.__name__)
 				c.setup()
 			elif DEBUG:
 				logger.warn("class %s's setup method is disabled" % _class.__name__)
@@ -49,7 +49,7 @@ def run(DEBUG = False):
 						if "description" in _class_test_method_fields:
 							logger.info("%s.%s: %s" % (_class.__name__, method_name, method_instance.description))
 						elif DEBUG:
-							logger.warn("class %s's %s method has no description message")
+							logger.warn("class %s's %s method has no description message" %(_class.__name__, method_name))
 						method_instance()
 					elif DEBUG:
 						logger.warn("class %s's %s method is disabled" % (_class.__name__, method_name))
