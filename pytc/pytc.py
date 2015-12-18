@@ -1,9 +1,7 @@
 import inspect
 import logging
-import coloredlogs
-
-logger = logging.getLogger(".")
-coloredlogs.install(level='DEBUG')
+from pytc import logger
+from logger import ColorfulText, ColorfulOutputLogger
 
 class TestCase(object):
 	description = None
