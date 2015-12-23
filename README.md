@@ -6,7 +6,9 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
 
 #Installation
 `git clone https://github.com/alkass/pytc`
+
 `cd pytc`
+
 `python setup.py install`
 
 #Usage
