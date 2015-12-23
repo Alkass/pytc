@@ -12,6 +12,27 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
 `python setup.py install`
 
 #Usage
+Following is a very basic example:
+
+```python
+from pytc.testcase import TestCase, run_tests
+
+class BasicTestCase(TestCase):
+    enabled = True
+    description = "This is a basic test case"
+
+    def setup(self):
+        pass
+    setup.enabled = True
+    setup.description = "Nothing to be done in setup()"
+
+    def test_1(self):
+        pass
+    test_1.enabled = True
+    test_1.description = "Nothing to be done in test_1()"
+
+run_tests(TestCase.__subclasses__())
+```
 
 
 #Author
