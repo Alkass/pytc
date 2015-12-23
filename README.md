@@ -5,7 +5,7 @@
 You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `TestCase` is the class you'll need to extend in every test case class you write, and `ColorfulOutputLogger` is a debugging mechanism used to log all outputs in a proper format.
 
 #Installation
-git clone https://github.com/alkass/pytc && cd pytc && python setup.py install
+`git clone https://github.com/alkass/pytc && cd pytc && python setup.py install`
 
 
 #Usage
