@@ -12,7 +12,7 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
 `python setup.py install`
 
 #Usage
-Following is a very basic example:
+Perhaps the simplest example is the following:
 
 ```python
 from pytc.testcase import TestCase, run_tests
@@ -33,6 +33,13 @@ class BasicTestCase(TestCase):
 
 run_tests(TestCase.__subclasses__())
 ```
+
+Let's now explore this example line by line.
+
+```python
+from pytc.testcase import TestCase, run_tests
+```
+
 
 
 #Author
