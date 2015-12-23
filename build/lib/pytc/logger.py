@@ -1,6 +1,3 @@
-from sys import stdout
-
-
 class ColorfulText:
 
     class Colors:
@@ -38,6 +35,9 @@ class ColorfulText:
     def fail(self, message):
         return "%s%sFAIL%s: %s%s" % (self.Colors.RED, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
 
+
+
+from sys import stdout
 
 class ColorfulOutputLogger:
 
