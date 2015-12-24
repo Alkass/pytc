@@ -1,6 +1,12 @@
-from pytc.testcase import TestCase, run_tests as run_tests
+from pytc.testcase import TestCase, run_tests
 
-class AA(TestCase):
-    pass
+class MyFirstTestCase(TestCase):
+    enabled = True
+    description = "This is a basic test case"
 
-run_tests(TestCase.__subclasses__())
+    def test_1(self):
+        pass
+    test_1.enabled = True
+    test_1.description = "Nothing to be done in test_1()"
+
+run_tests(TestCase.__subclasses__(), debug_level=1)
