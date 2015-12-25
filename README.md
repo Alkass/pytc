@@ -44,7 +44,7 @@ class MyFirstTestCase(TestCase):
     test_3.description = "Your test description"
 
 
-run_tests(TestCase.__subclasses__(), debug_level=1)
+run_tests(classes=TestCase.__subclasses__(), debug_level=1)
 ```
 
 
