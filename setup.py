@@ -8,5 +8,5 @@ setup(
     license='MIT',
     author='Fadi Hanna Al-Kass',
     author_email='',
-    description=''
+    description='pytc (stands for Python Test Case) is a tiny Python code testing tool designed to keep your Python test cases organized and informative.'
 )
