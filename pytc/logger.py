@@ -78,9 +78,6 @@ class ColorfulOutputLogger:
         self.num_fails += 1
         self.log(message, debug_level, self.c_text.fail)
 
-    def out_stats(self):
-        self.output_redirector.write("\n\n")
-        self.output_redirector.write("%d SUCCESSFUL %s\n" % (self.num_successes, "OPERATION" if self.num_successes is 1 else "OPERATIONS"))
-        self.output_redirector.write("%d INFORMATIVE %s\n" % (self.num_infos, "STATEMENT" if self.num_infos is 1 else "STATEMENTS"))
-        self.output_redirector.write("%d %s\n" % (self.num_warnings, "WARNING" if self.num_warnings is 1 else "WARNINGS"))
-        self.output_redirector.write("%d %s\n" % (self.num_fails, "FAILURE" if self.num_fails is 1 else "FAILURES"))
+    def __del__(self):
+        self.output_redirector.write("\nSUCCESSES(%d)  FAILURES(%d)  WARNINGS(%d)  INFORMATION(%d)" % (self.num_successes, self.num_fails, self.num_warnings, self.num_infos))
+        self.output_redirector.write("\n")

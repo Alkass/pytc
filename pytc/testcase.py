@@ -62,4 +62,4 @@ def run_tests(classes, debug_level = 0, output_redirector = stdout):
 			_class().run()
 		else:
 			logger.fail("%s is not a valid test case class. Fix this by extending TestCase in your class." % type(_class).__name__, 0)
-	logger.out_stats()
+	logger.__del__()
