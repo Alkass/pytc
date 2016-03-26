@@ -1,7 +1,9 @@
 #pytc
+
 <i>pytc</i> (stands for Python Test Case) is a tiny Python code testing tool designed to keep your Python test cases organized and informative.
 
 #What's in the Box?
+
 You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `TestCase` is the class you'll need to extend in every test case class you write, and `ColorfulOutputLogger` is a debugging mechanism used to log all output in a concise format.
 
 #Installation
@@ -19,6 +21,9 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
 ```
 
 #Example
+
+>>> An identical copy of the following script can be found at [tests.py](https://github.com/alkass/pytc/blob/master/tests.py)
+
 ```python
 from pytc.testcase import TestCase, run_tests
 
@@ -105,4 +110,5 @@ And expected output is as follows
 <img src="screenshots/1.png">
 
 #Author
+
 [Fadi Hanna Al-Kass](http://github.com/alkass)
