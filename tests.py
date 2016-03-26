@@ -5,25 +5,26 @@ class MyFirstTestCase(TestCase):
     description = "Your class description goes here"
 
     def setup(self):
-        # our test cases preperation goes here
-        pass
+        # everything you want to run before your test cases execute goes here
+        self.warning("Are you sure you don't want to implement your setup method?", 0)
     setup.enabled = True
     setup.description = "Your setup method description goes here"
 
     def test_1(self):
-        #Your test #1 goes here
-        pass
+        #Your third test case
+        self.success("This test case ran successfully", 0)
     test_1.enabled = True
     test_1.description = "Your test description"
 
     def test_2(self):
-        #Your test #2 goes here
-        pass
+        #Your third test case
+        self.success("This test case ran successfully", 0)
     test_2.enabled = True
     test_2.description = "Your test description"
 
     def test_3(self):
-        #Your test #3 goes here
+        #Your third test case
+        self.success("This test case ran successfully", 0)
         pass
     test_3.enabled = True
     test_3.description = "Your test description"
@@ -34,25 +35,26 @@ class MySecondTestCase(TestCase):
     description = "Your class description goes here"
 
     def setup(self):
-        # our test cases preperation goes here
-        pass
+        # everything you want to run before your test cases execute goes here
+        self.warning("Are you sure you don't want to implement your setup method?", 0)
     setup.enabled = True
     setup.description = "Your setup method description goes here"
 
     def test_1(self):
-        #Your test #1 goes here
-        pass
+        #Your first test case
+        self.success("This test case didn't run successfully", 0)
     test_1.enabled = True
     test_1.description = "Your test description"
 
     def test_2(self):
-        #Your test #2 goes here
-        pass
+        #Your second test case
+        self.success("This test case ran successfully", 0)
     test_2.enabled = True
     test_2.description = "Your test description"
 
     def test_3(self):
-        #Your test #3 goes here
+        #Your third test case
+        self.fail("This test case didn't run successfully", 0)
         pass
     test_3.enabled = True
     test_3.description = "Your test description"
