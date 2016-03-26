@@ -23,12 +23,20 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
 from pytc.testcase import TestCase, run_tests
 
 class MyFirstTestCase(TestCase):
+    """
+        if the enabled flag is set to False, the whole class gets ignored
+        by the run_tests function.
+    """
     enabled = True
     description = "Your class description goes here"
 
     def setup(self):
         # everything you want to run before your test cases execute goes here
         self.warning("Are you sure you don't want to implement your setup method?", 0)
+    """
+        if the enabled flag is set to False, the specific function gets ignored
+        by the run_tests function.
+    """
     setup.enabled = True
     setup.description = "Your setup method description goes here"
 
@@ -81,6 +89,14 @@ class MySecondTestCase(TestCase):
     test_3.enabled = True
     test_3.description = "Your test description"
 
+"""
+    TestCase.__subclasses__() provides a list all classes that extend the
+    TestCase class in the order they are seen in your script.
+    However, if you'd like to only run specific classes or run all classes in
+    a different order, simply initiate your own list with the classes of your
+    choice.
+        e.g., classes=[MySecondTestCase, MySecondTestCase]
+"""
 run_tests(classes=TestCase.__subclasses__(), debug_level=1)
 ```
 
