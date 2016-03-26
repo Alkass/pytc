@@ -82,5 +82,9 @@ class MySecondTestCase(TestCase):
 run_tests(classes=TestCase.__subclasses__(), debug_level=1)
 ```
 
+And the expected output is:
+
+<img src="screenshots/1.png">
+
 #Author
 [Fadi Hanna Al-Kass](http://github.com/alkass)
