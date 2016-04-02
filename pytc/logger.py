@@ -27,13 +27,13 @@ class ColorfulText:
         END = "\033[0m"
 
     def success(self, message):
-        return "%s%sSUCCESS%s: %s%s" % (self.Colors.GREEN, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
+        return "%s%sPASS%s: %s%s" % (self.Colors.GREEN, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
 
     def info(self, message):
         return "%s%sINFO%s: %s%s" % (self.Colors.BLUE, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
 
     def warning(self, message):
-        return "%s%sWARNING%s: %s%s" % (self.Colors.YELLOW, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
+        return "%s%sWARN%s: %s%s" % (self.Colors.YELLOW, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
 
     def fail(self, message):
         return "%s%sFAIL%s: %s%s" % (self.Colors.RED, self.TextStyle.BOLD, self.TextStyle.END, message, self.Colors.END)
