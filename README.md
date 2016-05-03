@@ -13,9 +13,6 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
 
 
 #Example
-
-> An identical copy of the following script can be found at [tests.py](https://github.com/alkass/pytc/blob/master/tests.py)
-
 ```python
 from pytc.testcase import TestCase, run_tests
 
