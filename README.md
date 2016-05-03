@@ -11,7 +11,6 @@ You basically get two main classes (`TestCase` and `ColorfulOutputLogger`). `Tes
     $ sudo pip install --upgrade git+git://github.com/alkass/pytc
 ```
 
-
 #Example
 ```python
 from pytc.testcase import TestCase, run_tests
