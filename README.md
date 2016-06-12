@@ -1,5 +1,7 @@
 #pytc
 
+[![Build Status](https://travis-ci.org/alkass/pytc.svg?branch=master)](https://travis-ci.org/alkass/pytc)
+
 <i>pytc</i> (stands for Python Test Case) is a tiny Python code testing tool designed to keep your Python test cases organized and informative.
 
 #What's in the Box?
