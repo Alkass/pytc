@@ -4,4 +4,3 @@ install:
 - sudo python setup.py install
 script:
 - cd tests
-- python test1.py
