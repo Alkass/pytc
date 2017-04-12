@@ -2,25 +2,19 @@ from sys import stdout, exit
 import inspect
 from logger import ColorfulOutputLogger
 
-
 logger = ColorfulOutputLogger()
 
-
 class TestCase(object):
-
 	success = logger.success
 	info = logger.info
 	warning = logger.warning
 	fail = logger.fail
-
 	description = None
 	enabled = True
-
 	def setup(self):
 		logger.warning("The setup method hasn't been implemented", 1)
 	setup.enabled = True
 	setup.description = None
-
 	def run(self):
 		if self.enabled:
 			if self.description:
@@ -47,7 +41,6 @@ class TestCase(object):
 				else:
 					self.warning("%s is disabled. Enable this method by setting the 'enabled' flag to True." % method_name, 1)
 				method_instance()
-
 
 def run_tests(classes, debug_level = 0, output_redirector = stdout):
 	if debug_level in range(0, 1000):
