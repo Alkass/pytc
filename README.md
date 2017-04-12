@@ -93,7 +93,7 @@ run_tests(classes=TestCase.__subclasses__(), debug_level=1)
 
 And expected output is as follows
 
-![no-text]["screenshots/1.png"]
+<img src="screenshots/1.png" />
 
 # Author
 
