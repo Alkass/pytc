@@ -81,11 +81,11 @@ class MySecondTestCase(TestCase):
     test_3.description = "Your test description"
 
 """
-    TestCase.__subclasses__() provides a list all classes that extend the
+    TestCase.__subclasses__() provides a list of all classes that extend the
     TestCase class in the order they are seen in your script.
     However, if you'd like to only run specific classes or run all classes in
-    a different order, simply initiate your own list with the classes of your
-    choice.
+    a different order, simply provide a python list with the test case classes
+    of your choice.
         e.g., classes=[MySecondTestCase, MySecondTestCase]
 """
 run_tests(classes=TestCase.__subclasses__(), debug_level=1)
