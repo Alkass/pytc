@@ -3,5 +3,4 @@ sudo: required
 install:
 - sudo python setup.py install
 script:
-- cd tests
-- python test1.py
+- python tests/test1.py
