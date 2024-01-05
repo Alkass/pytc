@@ -1,7 +1,8 @@
 repo_name: Alkass/pytc
 report_id: 0eed897549e1e79b261be909b749f85c
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-26T01:20:17+00:00'
+timestamp: '2024-01-05T08:32:52+00:00'
 requested_by: Alkass
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/Alkass/pytc
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -25,6 +27,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Alkass/pytc
   detection_source: Repo Metadata
 - name: Travis CI
   description: A hosted continuous integration service for open source and private
@@ -35,6 +38,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/Alkass/pytc/blob/master/.travis.yml
   detection_source: ".travis.yml"
   last_updated_by: f_alkass
   last_updated_on: 2016-06-12 20:36:48.000000000 Z
